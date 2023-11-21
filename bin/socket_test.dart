@@ -8,7 +8,7 @@ void startServer() {
     server.listen((Socket socket) {
       socket.listen((List<int> data) {
         String result = String.fromCharCodes(data);
-        print(result.substring(0, result.length - 1));
+        print(result);
       });
     });
   });
